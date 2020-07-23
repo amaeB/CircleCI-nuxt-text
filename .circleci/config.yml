@@ -12,5 +12,4 @@ workflows:
     jobs:
       build:
         steps:
-          - run: yarn
-          - run: yarn build
+          - run: echo abc

@@ -12,6 +12,8 @@ jobs:
       - checkout
       - run: yarn install
       - run: yarn build
+      - slack/status:
+          message: This is a custom message notification
 workflows:
   version: 2
   build-and-deploy:

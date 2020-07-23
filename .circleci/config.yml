@@ -10,5 +10,7 @@ workflows:
   welcome:
     # Run the welcome/run job in its own container
     jobs:
-      - run: yarn
-      - run: yarn build
+      build:
+        steps:
+          - run: yarn
+          - run: yarn build
